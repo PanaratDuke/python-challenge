@@ -1,0 +1,21 @@
+Open File
+    Import os
+    Import csv
+
+    create path
+    open file as csvfile
+    create file reader
+    create file header
+
+    read row in csvfile
+
+Find unique candidates
+unique_candidates = []
+    for candidate in csvfile:
+        if candidate not in  csvfile:
+            unique_candidates.append(candidate)
+    
+    for candidate in unique_list:
+        print (candidate)
+
+Using Multiple List (Page 88) to compare all_candiate with unique_candidates
