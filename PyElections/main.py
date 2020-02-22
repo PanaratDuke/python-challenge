@@ -2,7 +2,8 @@ import os
 import csv
 import operator
 
-csv_path = os.path.join('LearnPython','Python Homework','PyElections_Data.csv')
+csv_path = os.path.join('LearnPython','Python Homework','PyElections','PyElections_Data.csv')
+csv_out = os.path.join('LearnPython','Python Homework','PyElections','candidates_analysit.csv')
 total_no_vote = 0
 
 with open(csv_path,encoding='utf-8') as csv_file:
@@ -26,8 +27,8 @@ with open(csv_path,encoding='utf-8') as csv_file:
             total_no_vote += 1
 
 #--Write output into text file
-with open('candidates_analysis.txt', 'w') as output_file:
 
+with open(csv_out,'w') as output_file:     
 #--Print First Section
     print(f'\nHouston Mayoral Election Results')
     print('------------------------------------------')
@@ -54,7 +55,7 @@ with open('candidates_analysis.txt', 'w') as output_file:
 #--Find 2nd Advancing Candidate
     for k in count_vote:
         second_can = max(count_vote, key = lambda k: count_vote[k])
-    
+
 #--Print last section
     print(f'\n------------------------------------------')
     print(f'\n1st Advancing Candidate: {first_can}')
