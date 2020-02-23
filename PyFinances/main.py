@@ -1,8 +1,8 @@
 import os
 import csv
 
-csv_path = os.path.join('LearnPython','Python Homework','PyFinances','budget_data.csv')
-csv_out = os.path.join('LearnPython','Python Homework','PyFinances','budget_analysit.csv')
+csv_path = os.path.join('budget_data.csv')
+csv_out = os.path.join('budget_analysit.csv')
 
 
 

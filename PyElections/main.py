@@ -2,8 +2,8 @@ import os
 import csv
 import operator
 
-csv_path = os.path.join('LearnPython','Python Homework','PyElections','PyElections_Data.csv')
-csv_out = os.path.join('LearnPython','Python Homework','PyElections','candidates_analysit.csv')
+csv_path = os.path.join('PyElections_Data.csv')
+csv_out = os.path.join('candidates_analysit.csv')
 total_no_vote = 0
 
 with open(csv_path,encoding='utf-8') as csv_file:
